@@ -15,8 +15,36 @@
 
   gtag('config', 'G-19QX2R1ZQF');
 </script>
+<script>/* Open when someone clicks on the span element */
+  function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+
+  /* Close when someone clicks on the "x" symbol inside the overlay */
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }</script>
   </head>
   <body>
+     <!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+<span onclick="openNav()">xxxxxxxxxxxxxxxxx</span>
+
     <div data-tf-widget="RPodzJmy" data-tf-opacity="100" data-tf-inline-on-mobile data-tf-iframe-props="title=JordanBourbonnais" data-tf-transitive-search-params data-tf-auto-focus data-tf-medium="snippet" data-tf-full-screen></div>
   <script src="//embed.typeform.com/next/embed.js"></script>
 </body>
